@@ -1,0 +1,4 @@
+EPCno,ItemName,QuantityPerBox,Flavour,PackedDate,ExpiryDate,PackagingStatus,WeightPerUnit,GST,Mrp,DL
+10004B553638,Biscuit,50,Chocolate,15/6/2022,15/9/2022,Sealed,100,2%,40,Chennai
+456,Chocolate,100,Vanilla,15/6/2022,15/12/2022,NotSealed,55,2%,40,Mumbai
+789,Chips,20,CreamOnion,15/6/2022,15/9/2022,Sealed,50,2%,20,Ranchi

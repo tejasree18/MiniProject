@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+
+{% block title_name %} Selection {% endblock %}
+
+{% block content_body %}
+    <h3 style="text-align: center; color: red; margin-top: 30px; margin-bottom: 30px">Selection</h3>
+    <form method="post">
+        {% csrf_token %}
+        <div class="mb-4">
+            <input type="text" class="form-control" id="epcno" name="epcno" autocomplete="off" placeholder="Enter the EPC number" required>
+        </div>
+        <div class="mb-4">
+            <select class="form-select" aria-label="Default select example" name="item" id="item" style="margin-bottom: 25px !important;"
+                    required>
+                <option selected>Select Item</option>
+                <option value="1">Biscuit</option>
+                <option value="2">Chocolate</option>
+                <option value="3">Chips</option>
+            </select>
+        </div>
+        <button type="submit" class="btn btn-primary btn-lg d-grid gap-2 col-6 mx-auto" style="margin-bottom: 10px">SEARCH</button>
+    </form>
+    {% if le %}
+        <div class="alert alert-danger">{{ le }}</div>
+    {% endif %}
+{% endblock %}

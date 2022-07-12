@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block title_name %} Display {% endblock %}
+
+{% block content_body %}
+    <h3 style="text-align: center; color: red; margin-top: 30px; margin-bottom: 30px">Display</h3>
+    {% if res %}
+        <div class="alert alert-success" style="margin-top: 10px; margin-bottom: 30px">The selected item is {{ res }}</div>
+    {% endif %}
+    {% if res1 %}
+        <div class="alert alert-danger" style="margin-top: 10px; margin-bottom: 30px">The selected item is {{ res1 }}</div>
+    {% endif %}
+{% endblock %}
